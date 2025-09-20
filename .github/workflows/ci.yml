@@ -20,8 +20,8 @@ jobs:
 
       - name: alwaysgreen
         run: |
-          git config --local user.email "github.com@celyi.com"
-          git config --local user.name "joey8447665"
+          git config --local user.email "rui@celyi.com"
+          git config --local user.name "rui1115"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.MY_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
           git commit --allow-empty -m "a commit a day keeps your girlfriend away"
